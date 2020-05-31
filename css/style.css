@@ -1,0 +1,99 @@
+
+/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+    height: 100%;
+    box-sizing: border-box;
+}
+/* Full Page Carousel itself*/
+.carousel {
+    height: 100%;
+}
+
+.carousel .carousel-inner {
+    height: 100%;
+}
+
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+    height: 100%;
+}
+
+/* Navbar animation */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: sticky;
+}
+
+.top-nav-collapse {
+    background-color: #1C2331;
+}
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1C2331;
+    }
+}
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+    background-image:url("../bg2.png");
+}
+
+.green-text {
+    color: green;
+    font-weight: bolder;
+}
+
+.logo img {
+    height: 96p;
+    height: 96p;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+canvas {
+    /*prevent interaction with the canvas*/
+    pointer-events: none;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:60px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float a{
+    color:fff;
+    text-decoration: none;
+}
+
+.iconewp{
+    margin-top:16px;
+}
