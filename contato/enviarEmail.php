@@ -95,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])
 
   //Requisição POST:
   $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-  $recaptcha_secret = '6LdlC_IUAAAAAAQIMDIkCIrBOriGaWtyzNp4lHnN';
+  $recaptcha_secret = 'fakesecretcaptcha';
   $recaptcha_response = $_POST['recaptcha_response'];
 
   // Decodifica o JSON da resposta:
@@ -115,8 +115,8 @@ $mail->Encoding = 'base64';
 $mail->Host = 'smtp-relay.sendinblue.com';
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-$mail->Username = 'csantos3600@gmail.com'; 
-$mail->Password = 'bydE7csXY6DCT3xA';
+$mail->Username = 'DUMMYUSER'; 
+$mail->Password = 'DUMMYPASS';
 $mail->Port = 587;
 $mail->setFrom('info@sendinblue.com', 'Cesar Augusto');
 $mail->addAddress($email,$pnome); 
